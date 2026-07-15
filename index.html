@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Periodic Table</title>
+    <link rel="stylesheet" href="styleSheet.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Periodic Table</h1>
+      <p>118 Chemical Elements</p>
+    </header>
+
+    <section class="toolbar">
+      <input type="text" id="search" placeholder="Search Element..." />
+      <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <h2>118</h2>
+        <p>Elements</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>18</h2>
+        <p>Groups</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>7</h2>
+        <p>Periods</p>
+      </div>
+
+      <div class="stat-card">
+        <h2>10</h2>
+        <p>Categories</p>
+      </div>
+    </section>
+
+    <section class="legend">
+      <div class="legend-box alkali-metal">Alkali Metal</div>
+      <div class="legend-box alkaline-earth-metal">Alkaline Earth</div>
+      <div class="legend-box transition-metal">Transition</div>
+      <div class="legend-box post-transition-metal">Post Transition</div>
+      <div class="legend-box metalloid">Metalloid</div>
+      <div class="legend-box nonmetal">Nonmetal</div>
+      <div class="legend-box halogen">Halogen</div>
+      <div class="legend-box noble-gas">Noble Gas</div>
+      <div class="legend-box lanthanide">Lanthanide</div>
+      <div class="legend-box actinide">Actinide</div>
+    </section>
+
+    <section class="table-wrapper">
+      <div class="group-labels"></div>
+      <div class="period-labels"></div>
+      <div class="periodic-table"></div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="title"></h2>
+        <p><strong>🔢 Atomic Number:</strong> <span id="number"></span></p>
+        <p><strong>⚛ Symbol:</strong> <span id="symbol"></span></p>
+        <p><strong>⚖ Atomic Mass:</strong> <span id="mass"></span></p>
+        <p><strong>🧪 Category:</strong> <span id="category"></span></p>
+        <p><strong>📂 Group:</strong> <span id="group"></span></p>
+        <p><strong>📅 Period:</strong> <span id="period"></span></p>
+      </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
