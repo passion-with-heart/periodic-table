@@ -7,6 +7,7 @@
 
 :root {
   --bg: #0f172a;
+  --bgl: #ffffff;
   --card: #1e293b;
   --text: #ffffff;
   --heading: #38bdf8;
@@ -15,6 +16,7 @@
 
 .light {
   --bg: #f8fafc;
+  --bgl: #ccc;
   --card: #ffffff;
   --text: #111827;
   --heading: #2563eb;
@@ -77,7 +79,7 @@ header p {
   border-radius: 12px;
   outline: none;
   font-size: 16px;
-  background: white;
+  background: var(--bgl);
 }
 
 /* LEGEND */
@@ -367,7 +369,7 @@ header p {
 }
 
 .stat-card p {
-  color: #cbd5e1;
+  color: var(--text);
   font-size: 15px;
 }
 
