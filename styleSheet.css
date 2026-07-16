@@ -8,6 +8,7 @@
 :root {
   --bg: #0f172a;
   --bgl: #ffffff;
+  --statCard: #ffffff0d;
   --card: #1e293b;
   --text: #ffffff;
   --heading: #38bdf8;
@@ -17,6 +18,7 @@
 .light {
   --bg: #f8fafc;
   --bgl: #ccc;
+  --statCard: #ccc;
   --card: #ffffff;
   --text: #111827;
   --heading: #2563eb;
@@ -350,7 +352,7 @@ header p {
   padding: 22px;
   text-align: center;
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--statCard);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   transition: 0.35s;
